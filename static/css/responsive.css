@@ -1,0 +1,475 @@
+/* =================================================
+
+Template Name:  Xenox - One Page Personal Portfolio Template
+Author: MouriThemes
+Version: 1.0
+Design and Developed by: MouriThemes
+
+NB: This is the responsive stylesheet of this theme.
+
+=================================================== */
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+    /* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 35px 0;
+    }
+
+    .section-header {
+        margin-bottom: 10px;
+    }
+
+    .services-text-right {
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        margin: 15px 0;
+    }
+
+    .sticky_navigation .navbar-right {
+        margin-top: 25px;
+    }
+
+    .reviewer-designation {
+        text-align: center;
+    }
+
+    .navbar-nav > li > a {
+        line-height: 0;
+    }
+
+    .nav > li > a {
+        padding: 10px 8px;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 4.5em;
+    }
+
+    .mouse-icon {
+        bottom: -320px;
+    }
+
+    .about-text p {
+        line-height: 1.7em;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .single-hire-me p {
+        font-size: 18px;
+    }
+
+    .portfolio-area nav ul li {
+        padding: 5px 15px;
+        margin-left: 5px;
+    }
+
+    .testimonial-content p {
+        font-size: 16px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #F1C40F;
+    }
+
+    .navbar-toggle {
+        margin-top: 10px;
+    }
+
+    .sticky_navigation .navbar-toggle {
+        margin-top: 20px;
+    }
+
+    .navbar-nav {
+        float: right;
+        margin: 11px 21px;
+        margin-right: 32%;
+        display: inherit;
+        width: 200px;
+        background-color: transparent;
+    }
+
+    .navbar-nav li {
+        float: left;
+        margin: 9px 50px;
+        display: inherit;
+        width: 100%;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        height: 740px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .sticky_navigation .nav li a {
+        color: #ffffff;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 2em;
+    }
+
+    .welcome-text h2 {
+        font-size: 2em;
+    }
+
+    .welcome-text h3 {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .banner-btn a {
+        padding: 7px 20px;
+        letter-spacing: 0;
+    }
+
+    p.heading-text {
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 10px 15px;
+    }
+
+    .section-header .first-headline {
+        font-size: 40px;
+    }
+
+    .section-header .second-headline {
+        font-size: 25px;
+        top: -30px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .resume-area .content h3 {
+        font-size: 13px;
+    }
+    .resume-area .content h4 {
+        font-size: 15px;
+    }
+
+    .left::before {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+
+    .single-hire-me h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .services-text-left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .services-text-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .row.middle-row {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .reviewer-designation {
+        text-align: center;
+    }
+
+    .single-quotation h2 {
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+    .btn.btn-primary::before {
+        display: none;
+    }
+
+    .about-area .btn.btn-primary{
+        border-color: #3498DB;
+    }
+
+    .about-area .btn-group .btn {
+        padding: 15px 0;
+        font-size: 15px;
+    }
+
+    .proPic img {
+        margin-bottom: 15px;
+    }
+
+    .signature-img {
+        width: 25%;
+    }
+
+    .socials {
+        margin-top: 30px;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .shuffle-item.filtered {
+        padding: 0;
+    }
+
+    .portfolio-area ul{
+        text-align: center;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 5px;
+    }
+
+    .portfolio-sorting {
+        margin-bottom: 0;
+    }
+
+    .portfolio-sorting.list-inline > li {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-area ul.list-inline li:first-child {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .portfolio-area ul.list-inline li:last-child {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .portfolio-area nav ul li {
+        padding: 5px 21px;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0;
+    }
+
+    .single-testimonial {
+        margin: 0;
+    }
+
+    .testimonial-heading {
+        margin-bottom: 40px;
+    }
+
+    .testimonial-content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .contact-area .form-control {
+        font-size: 11px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+
+    .language-skills h2 {
+        margin-top: 50px;
+    }
+
+    .brand-area .owl-carousel .owl-item img {
+        padding: 15px;
+    }
+
+
+
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .welcome-text h2 {
+        font-size: 3em;
+    }
+
+    .welcome-text h3 {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .section-header .first-headline {
+        font-size: 50px;
+    }
+
+    .section-header .second-headline {
+        font-size: 30px;
+        top: -39px;
+    }
+
+    .resume-area .content h3 {
+        font-size: 17px;
+    }
+
+    .reviewer-designation h2 {
+        font-size: 20px;
+    }
+
+    .reviewer-designation h3 {
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        margin-right: 38%;
+    }
+
+    .reviewer-designation h4 {
+        font-size: 20px;
+    }
+
+    .reviewer-comment h5 {
+        font-size: 18px;
+    }
+
+    .single-portfolio img {
+        width: 100%;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #F1C40F;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0;
+    }
+
+    .contact-area {
+         background-position: inherit;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .addressLeft span{
+        display:inline-block;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 7px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 4px;
+    }
+}
+
+
+@media screen and (min-width: 600px)and (max-width: 767px){
+    .navbar-nav {
+        margin-right: 40%;
+    }
+
+    .resume-area .content h3 {
+        font-size: 18px;
+    }
+
+    .resume-area .content h4 {
+        font-size: 18px;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 4em;
+    }
+
+    .section-header .second-headline {
+        font-size: 35px;
+        top: -45px;
+    }
+
+    .section-header .first-headline {
+        font-size: 65px;
+    }
+
+    .reviewer-designation h2 {
+        font-size: 25px;
+    }
+
+    .reviewer-designation h3 {
+        font-size: 20px;
+    }
+
+    .reviewer-designation h4 {
+        font-size: 20px;
+    }
+
+    .reviewer-comment h5 {
+        font-size: 18px;
+    }
+
+    .single-hire-me p {
+        font-size: 15px;
+    }
+
+    .single-portfolio {
+        text-align: center;
+    }
+
+    .proPic img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+
+}
+
+

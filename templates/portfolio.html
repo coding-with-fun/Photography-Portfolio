@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!--navigation area starts-->
+
+<header class="nav-area navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <!--main menu starts-->
+
+      <div class="col-md-12">
+        <div class="main-menu">
+          <div class="navbar navbar-cus">
+              <div class="navbar-header">
+              <a href="/" class="navbar-brand"
+                  ><span>$$ </span>Works</a
+              >
+              <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+              >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              </div>
+
+              <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active">
+                          <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a href="/#about">About</a>
+                      </li>
+                      <li>
+                          <a href="/#services">Services</a>
+                      </li>
+                      <li>
+                          <a href="/#portfolio">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="#contact" class="smooth-menu">Contact</a>
+                      </li>
+                    </ul>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--main menu ends-->
+    </div>
+  </div>
+</header>
+
+<!--navigation area ends-->
+
+<!--Statistic area starts-->
+
+<div class="statistic-area">
+  <div class="overlay section-padding">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header">
+          <h2 class="first-headline">Portfolio</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Statistic area ends-->
+
+<!--Portfolio Area Starts-->
+
+<div id="portfolio" class="portfolio section-padding">
+  <div class="container">
+    <div class="row">
+      <ul class="portfolio-sorting list-inline text-center">
+        <li><a href="#" data-group="all" class="active">All</a></li>
+        <li><a href="#" data-group="2d">2D</a></li>
+        <li><a href="#" data-group="3d">3D Animation</a></li>
+        <li><a href="#" data-group="photography">Photography</a></li>
+        <li><a href="#" data-group="sketch">Sketch</a></li>
+      </ul>
+      <!--end portfolio sorting -->
+
+      <div class="portfolio-items list-unstyled" id="grid">
+        {% for photo in data["2d"] %}
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-groups='["2d"]'
+            >
+              <figure class="portfolio-item">
+                <a href={{photo["path"]}} class="galleryItem">
+                  <img
+                    src={{photo["path"]}}
+                    alt={{photo["alt"]}}
+                    class="img-responsive"
+                  />
+                  <span class="item-overlay">
+                    <i>{{photo["name"]}}</i>
+                  </span>
+                </a>
+              </figure>
+            </div>
+        {% endfor %}
+        {% for photo in data["3d"] %}
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-groups='["3d"]'
+            >
+              <figure class="portfolio-item">
+                <a href={{photo["path"]}} class="galleryItem">
+                  <img
+                    src={{photo["path"]}}
+                    alt={{photo["alt"]}}
+                    class="img-responsive"
+                  />
+                  <span class="item-overlay">
+                    <i>{{photo["name"]}}</i>
+                  </span>
+                </a>
+              </figure>
+            </div>
+        {% endfor %}
+        {% for photo in data["photography"] %}
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-groups='["photography"]'
+            >
+              <figure class="portfolio-item">
+                <a href={{photo["path"]}} class="galleryItem">
+                  <img
+                    src={{photo["path"]}}
+                    alt={{photo["alt"]}}
+                    class="img-responsive"
+                  />
+                  <span class="item-overlay">
+                    <i>{{photo["name"]}}</i>
+                  </span>
+                </a>
+              </figure>
+            </div>
+        {% endfor %}
+        {% for photo in data["sketch"] %}
+            <div
+              class="col-md-4 col-sm-6 col-xs-12"
+              data-groups='["sketch"]'
+            >
+              <figure class="portfolio-item">
+                <a href={{photo["path"]}} class="galleryItem">
+                  <img
+                    src={{photo["path"]}}
+                    alt={{photo["alt"]}}
+                    class="img-responsive"
+                  />
+                  <span class="item-overlay">
+                    <i>{{photo["name"]}}</i>
+                  </span>
+                </a>
+              </figure>
+            </div>
+        {% endfor %}
+      </div>
+      
+      <!--end portfolio grid -->
+    </div>
+    <!--end row -->
+  </div>
+  <!-- end container-->
+</div>
+
+<!--Portfolio Area Ends-->
+
+<!--Quotation area starts-->
+
+<div class="quotation-area">
+  <div class="overlay section-padding">
+  </div>
+</div>
+
+<!--Quotaion area ends-->
+{% endblock %}

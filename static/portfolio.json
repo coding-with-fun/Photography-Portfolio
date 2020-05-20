@@ -1,0 +1,124 @@
+{
+    "photos": {
+        "2d": [
+            {
+                "path": "/static/images/portfolio/2d/photo-1.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-1.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-1.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-1.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            }
+        ],
+        "3d": [
+            {
+                "path": "/static/images/portfolio/2d/photo-2.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-2.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-2.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-2.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            }
+        ],
+        "photography": [
+            {
+                "path": "/static/images/portfolio/2d/photo-3.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-3.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-3.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-3.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            }
+        ],
+        "sketch": [
+            {
+                "path": "/static/images/portfolio/2d/photo-4.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-4.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-4.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-4.jpg",
+                "name": "Photo",
+                "alt": "portfolio image"
+            }
+        ],
+        "home": [
+            {
+                "path": "/static/images/portfolio/photography/photo-1.jpg",
+                "name": "Photography (1)",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/2d/photo-1.jpg",
+                "name": "2D Photo (2)",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/3d/photo-1.jpg",
+                "name": "3D Photo (3)",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/photography/photo-2.jpg",
+                "name": "Photography (4)",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/sketch/photo-1.jpg",
+                "name": "Sketch (5)",
+                "alt": "portfolio image"
+            },
+            {
+                "path": "/static/images/portfolio/3d/photo-2.jpg",
+                "name": "3D Photo (6)",
+                "alt": "portfolio image"
+            }
+        ]
+    }
+}

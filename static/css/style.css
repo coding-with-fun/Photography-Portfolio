@@ -1,0 +1,1369 @@
+/* =================================================
+
+Template Name:  Xenox - One Page Personal Portfolio Template
+Author: MouriThemes
+Version: 1.0
+Design and Developed by: Manash Kanti Sarker
+
+NB: This is the main stylesheet of this theme.
+
+=================================================== */
+
+/*
+Table of content
+
+1. Default css
+2. Preloader css
+3. Nav area css
+4. Mouse Animate css
+5. Banner area css
+6. About area css
+   6.1. Skills area css
+   6.2. Resume area css
+7. Hire Me area
+8. Services area css
+9. Statistic area css
+10. Portfolio area css
+11. Quotation area css
+12. Testimonial area css
+13. Contact area css
+14. Brand Carousel css
+15. Footer Top css
+16. Footer area css
+
+*/
+
+
+/*---------- 1. Default css starts ------------*/
+
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333333;
+    font-weight:400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #333333;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 20px;
+    text-transform: none;
+}
+
+p {
+    letter-spacing: 0;
+    line-height:1.8;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding: 80px 0;
+}
+
+.section-header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-header .line1 {
+    height: 2px;
+    width: 200px;
+    background: #3498db;
+    margin:auto;
+}
+
+.section-header .line2 {
+    height: 2px;
+    width: 150px;
+    background: #222222;
+    margin: 15px auto;
+}
+
+/*---------- default css ends ------------*/
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #F1C40F;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+/*---------- preloader css ends -------------*/
+
+/*---------- 3. Nav area css starts -------------*/
+
+.nav-area{
+    height: 65px;
+}
+
+.nav-area.sticky_navigation {
+    background: #ffffff;
+    height: 70px;
+}
+
+.sticky_navigation .navbar-right {
+    margin-top: 15px;
+    -webkit-transition: margin .9s;
+}
+
+.sticky_navigation{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out ;
+    -ms-transition: all 0.4s ease-out ;
+    -o-transition: all 0.4s ease-out ;
+    transition: all 0.4s ease-out ;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .main-menu{
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand{
+    color: #f1c40f;
+}
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus {
+    color: #333333;
+}
+
+.sticky_navigation .nav li a {
+    color: #333333;
+}
+
+.sticky_navigation .nav li.active a {
+    color: #f1c40f;
+}
+
+.sticky_navigation .navbar-brand:hover{
+    color: #333333;
+}
+
+.sticky_navigation .navbar-brand {
+    padding: 15px;
+    font-size: 25px;
+    display: block;
+    font-weight: 800;
+    margin-top: 10px;
+    border: 1px solid #f1c40f;
+    color: #333333;
+}
+
+.main-menu{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar{
+    border:0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    font-weight: 800;
+    border: 1px solid #fff;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-brand span {
+    color: #f1c40f;
+    font-size: 40px;
+}
+
+.navbar-right li{
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right li.active a{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus{
+    background: none;
+}
+
+.navbar-toggle .icon-bar{
+    background: #777777;
+}
+
+/*---------- Nav area css ends -------------*/
+
+/*----------- 4. Mouse Animate Icon Starts ------------------*/
+
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: -160px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes drop	{
+    0%   { top:5px;  opacity: 0;}
+    30%  { top:10px; opacity: 1;}
+    100% { top:25px; opacity: 0;}
+}
+
+/* --------- Mouse Animate Icon ends -------------- /*
+
+/* --------- 5. Banner area css starts -----------*/
+
+.banner-area{
+    background-image: url(../images/home/banner.png); /*--Edit here--*/
+    background-position: center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+}
+
+.banner-area::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.banner-table{
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome-text{
+    color: #ffffff;
+}
+
+.welcome-text h2 {
+    font-size: 3.8em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+p.name-line {
+    height: 1px;
+    width: 100px;
+    background: #F1C40F;
+    display: inline-block;
+    margin: 0;
+}
+
+.welcome-text h3 {
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.welcome-text h3 span {
+    background: #F1C40F;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.banner-btn a {
+    border:2px solid #f1c40f;
+    color: #ffffff;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 991px){
+    .welcome-text{
+        text-align: center;
+        margin: 25px auto;
+    }
+}
+
+/* --------------  Banner area css ends --------------- */
+
+/*---------------6. About area starts ----------------*/
+
+.section-header .first-headline {
+    font-size: 60px;
+    color: rgba(241,196,15,0.3);
+    text-transform: uppercase;
+}
+
+.section-header .second-headline {
+    text-transform: uppercase;
+    font-size: 40px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -45px;
+}
+
+.proPic img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 10px 10px 4px #dddddd;
+    -webkit-transition: .9s;
+}
+
+.proPic img:hover {
+    box-shadow: none;
+    -webkit-transition: .9s;
+}
+
+.about-text h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.cv-btn {
+    background: #F1C40F;
+    padding: 10px 15px;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cv-btn:hover, .cv-btn:focus{
+    color: #ffffff;
+}
+
+.cv-btn i {
+    color: #000000;
+    margin-right: 10px;
+}
+
+
+/*-------- 6.1. Skills area starts ----------*/
+
+.skills-area {
+    background-image: url(../images/about/skills-bg.png); /*--edit here--*/
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;
+}
+
+.skills-area .overlay{
+    background: rgba(0,0,0,0.9);
+}
+
+.skills-area .second-headline {
+    color: #ffffff;
+}
+
+.single-program {
+    text-align: center;
+}
+
+.programming-area h2, .language-skills h2 {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.single-program h3 {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.progress-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #E2DFE6 !important;
+}
+
+.progress-circle span {
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000;
+}
+
+.progress-circle span::after {
+    color: #ffffff;
+}
+
+.progress-circle.progress-90::after {
+    background-image: -webkit-linear-gradient(54deg, #F1C40F 50%, transparent 50%, transparent), -webkit-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -moz-linear-gradient(54deg, #F1C40F 50%, transparent 50%, transparent), -moz-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -o-linear-gradient(54deg, #F1C40F 50%, transparent 50%, transparent), -o-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: linear-gradient(54deg, #F1C40F 50%, transparent 50%, transparent), linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+}
+
+.progress-circle.progress-70::after {
+    background-image: -webkit-linear-gradient(-18deg, #F1C40F 50%, transparent 50%, transparent), -webkit-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -moz-linear-gradient(-18deg, #F1C40F 50%, transparent 50%, transparent), -moz-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -o-linear-gradient(-18deg, #F1C40F 50%, transparent 50%, transparent), -o-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: linear-gradient(-18deg, #F1C40F 50%, transparent 50%, transparent), linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+}
+
+.progress-circle.progress-65::after {
+    background-image: -webkit-linear-gradient(-36deg, #F1C40F 50%, transparent 50%, transparent), -webkit-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -moz-linear-gradient(-36deg, #F1C40F 50%, transparent 50%, transparent), -moz-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -o-linear-gradient(-36deg, #F1C40F 50%, transparent 50%, transparent), -o-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: linear-gradient(-36deg, #F1C40F 50%, transparent 50%, transparent), linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+}
+
+.progress-circle.progress-75::after {
+    background-image: -webkit-linear-gradient(0deg, #F1C40F 50%, transparent 50%, transparent), -webkit-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -moz-linear-gradient(0deg, #F1C40F 50%, transparent 50%, transparent), -moz-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: -o-linear-gradient(0deg, #F1C40F 50%, transparent 50%, transparent), -o-linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+    background-image: linear-gradient(0deg, #F1C40F 50%, transparent 50%, transparent), linear-gradient(270deg, #F1C40F 50%, #ebebeb 50%, #ebebeb); /*--edit here--*/
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.skillbar-bar::before {
+    background: #ffffff !important;
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+    height: 5px;
+    width: 0;
+    background: #F1C40F;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*---------skills area ends---------*/
+
+/*-----------6.2 Resume area starts-----------*/
+
+.education-area h2, .experience-area h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.experience-area h2 {
+    margin-top: 40px;
+}
+
+
+
+.resume-area .content h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+
+.education-area h2::before {
+    content: '----';
+    padding-right: 10px;
+}
+
+.education-area h2::after {
+    content: '----';
+    padding-left: 10px;
+}
+
+.experience-area h2::before {
+    content: '----';
+    padding-right: 10px;
+}
+
+.experience-area h2::after {
+    content: '----';
+    padding-left: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 30px;
+    z-index: -1;
+    width: 6px;
+    background-color: #dddddd;
+    top: 0;
+}
+
+.wrapper {
+    background-color: inherit;
+    width: 50%;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/about/1.png); /*--edit image--*/
+    border: 4px solid #dddddd;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    border-radius: 50%;
+    z-index: 1;
+    background-size: cover;
+}
+
+.experience-area .wrapper::after {
+    background-image: url(../images/about/2.png); /*--edit image--*/
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    right: 30px;
+    z-index: 1;
+    border-color: transparent transparent transparent #ffffff;
+    top: 22px;
+    width: 0;
+}
+
+.right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: rgba(58,78,95,0.4) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+}
+
+.content:hover{
+    background: #F1C40F;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.left::before {
+    border-color: transparent transparent transparent #F1C40F;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.right::before {
+    border-color: transparent #F1C40F transparent transparent;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.wrapper::after {
+    border-color: #F1C40F;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.content:hover h4{
+    color: #ffffff;
+}
+.content:hover p{
+    color: #ffffff;
+}
+
+.content:hover .left::before {
+    border-color: transparent transparent transparent #F1C40F;
+}
+
+.content:hover .right::before{
+    border-color: transparent #F1C40F transparent transparent;
+}
+
+@media all and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .wrapper::before {
+        left: 60px;
+    }
+    .wrapper:hover.left::before {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #F1C40F transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0;
+    }
+}
+
+
+/*-----------------Resume area ends------------*/
+
+/*------------------ 7. Hire me area starts------------*/
+
+.hire-me-area{
+    background-image: url(../images/hire/hire-bg.png); /*edit image*/
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;
+}
+
+.hire-me-area .overlay{
+    background: rgba(0,0,0,0.8);
+}
+
+.single-hire-me {
+    text-align: center;
+}
+
+.single-hire-me h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.single-hire-me p {
+    color: #ffffff;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.single-hire-me a {
+    background-color: #F1C40F;
+    color: #ffffff;
+    padding: 10px 50px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/*-----------Hire me area ends----------*/
+
+/*--------------- About area ends ----------------*/
+
+/*---------------8. Services area Starts----------*/
+
+.service-icon {
+    background: #F1C40F;
+    text-align: center;
+    color: #ffffff;
+}
+
+.service-icon i {
+    font-size: 45px;
+    padding: 35px 9px;
+}
+
+.services-text-left {
+    text-align: right;
+}
+
+.services-text-right {
+    text-align: left;
+}
+
+.single-services h4 {
+    margin: 0 0 15px 0;
+}
+
+.row.middle-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.single-services:hover .service-icon {
+    background: #222222;
+    color: #F1C40F;
+    transition: .7s;
+    -webkit-transition: .7s;
+}
+
+/*--------------- Services area ends --------------*/
+
+/*-------- 9. Statistic area starts---------*/
+
+.statistic-area{
+    background-image: url(../images/hire/hire-bg.png); /*--- edit image ---*/
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.statistic-area .overlay{
+    background: rgba(0,0,0,0.8);
+}
+
+.single-count i {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.single-count h2 {
+    font-size: 40px;
+    color: #F1C40F;
+}
+
+.single-count p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*--------Statistic area ends---------*/
+
+/*-------------- 10. Portfolio area starts-----------*/
+
+.portfolio-sorting
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.portfolio-sorting li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px;
+    background: #333333;
+}
+
+.portfolio-sorting.list-inline > li {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.portfolio-sorting li a:hover, .portfolio-sorting li a.active {
+    color: #ffffff;
+    border-bottom: none;
+    background: #F1C40F;
+}
+
+.portfolio-item
+{
+    margin: 1em 0;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.portfolio-item img {
+    height: 180pt;
+    width: 280pt;
+    transition: 0.8s ease-out;
+}
+
+.portfolio-item .item-overlay{
+    position: absolute;
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    height: 0;
+    top: 50%;
+    width: 0;
+    text-align: center;
+    opacity: 0;
+    left: 50%;
+    background: rgba(241,196,15,0.5);
+}
+
+.portfolio-item:hover {
+    z-index: 100;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.portfolio-item:hover .item-overlay {
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.portfolio-item .item-overlay i {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    left: 50%;
+    color: #fff;
+    background-color: #333333;
+    padding: 20px;
+    top: 50%;
+}
+
+/*--------------Portfolio area Ends-----------*/
+
+/*----- 11. Quotation area starts--------*/
+
+.quotation-area{
+    background-image: url(../images/hire/hire-bg.png); /*--edit image--*/
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;
+}
+
+.quotation-area .overlay{
+    background: rgba(0,0,0,0.8);
+}
+
+
+.single-quotation {
+    text-align: center;
+}
+
+.single-quotation h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.single-quotation p {
+    color: #ffffff;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.single-quotation p::before {
+    content: '---';
+    padding-right: 10px;
+}
+
+.single-quotation p::after {
+    content: '---';
+    padding-left: 10px;
+}
+
+/*------- quotation area ends ---------- */
+
+/*------------ 12. Testimonial area starts ---------*/
+
+
+.testimonial-area {
+    background: #ffffff;
+}
+
+.item::before {
+    background: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #F1C40F;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 30px;
+}
+
+.client-img {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+
+.custom-color {
+    background: #F1C40F;
+}
+
+.left-pad{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#testimonial-carousel .item {
+    border: 1px solid #F1C40F;
+    margin: 0 3px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.client-designation h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.client-designation h4 {
+    font-size: 14px;
+    color: #FF1493;
+}
+
+.reviewer-point .fa-star{
+    color: #ffffff;
+}
+
+.reviewer-point .checked{
+    color: orange;
+}
+
+.reviewer-designation h2 {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.reviewer-designation {
+    text-align: left;
+}
+
+.reviewer-designation h3 {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+
+.reviewer-designation h4 {
+    color: #333333;
+    font-size: 15px;
+}
+.reviewer-comment h5 {
+    margin: 30px 0 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reviewer-point {
+    background: #333333;
+    padding: 15px 0;
+}
+
+.custom-review .col-md-6.no-gutter {
+    margin: 0;
+    padding: 0;
+}
+
+.reviewer-profile i {
+    margin: 0 5px;
+    color: #ffffff;
+}
+
+.reviewer-profile {
+    background: #F1C40F;
+    padding: 15px 0;
+}
+
+.row.custom-review {
+    margin-top: 40px;
+}
+
+/*------------ Testimonial area ends ---------*/
+
+/*-------------13. Contact area starts -------------*/
+
+.contact-area .second-headline {
+    color: #ffffff;
+}
+
+.contact-area{
+    background-image: url(../images/hire/hire-bg.png); /*--edit image--*/
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.contact-area .overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.contact-area .form-control{
+    border: none;
+    border-bottom: 2px solid #eeeeee;
+    box-shadow: none;
+    padding: 6px 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #eeeeee;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #F1C40F;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*------------- Contact area ends -------------*/
+
+/*------------ 14. Brand carousel area strats ------- */
+
+.brand-area {
+    background: #dddddd;
+}
+
+#brand-carousel .item {
+    margin: 0 15px;
+}
+
+.brand-area .section-header .second-headline {
+    font-size: 25px;
+    top: -10px;
+    margin-bottom: 40px;
+}
+
+.brand-area .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    border: 1px solid #333333;
+    padding: 30px;
+}
+
+.brand-area .owl-theme .owl-dots .owl-dot span {
+    background: #cbcbcb;
+}
+
+.brand-area .owl-theme .owl-dots .owl-dot.active span {
+    background: #869791;
+}
+
+.single-logo {
+    margin-bottom: 15px;
+}
+
+/*------------- Brand carousel area ends ----------*/
+
+
+/*-------------15. Footer top area starts---------- */
+
+.footer-top-area {
+    padding: 40px 0;
+    background: #121212;
+}
+
+.single-footer-top {
+    text-align: center;
+}
+
+.single-footer-top span {
+    background: #000000;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.single-footer-top:hover span {
+    background: #F1C40F;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+
+.single-footer-top span i {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.single-footer-top h2 {
+    font-size: 15px;
+    color: #818181;
+}
+
+/*------------- Footer top area ends---------- */
+
+/*--------------16. Footer area starts -------------*/
+
+.footer-area {
+    background: #171717;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+/*--------------- Footer area ends -------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
